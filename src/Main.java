@@ -31,16 +31,18 @@ public class Main {
 
         //Задача4
         int deliveryDistance = 95;
-        if (deliveryDistance <= 20) {
-            System.out.println("Время доставки составит до суток");
-        } else
-            if (deliveryDistance <= 60) {
-                System.out.println("Время доставки составит до двух суток");
-            } else
-                if (deliveryDistance <=100) {
-                    System.out.println("Время доставки составит до трех суток");
-                } else
-                    System.out.println("Время доставки составит более трех суток");
+        int deliveryTime = 1;
+        if (deliveryDistance > 20) {
+            deliveryTime ++;
+        }
+        if (deliveryDistance > 60) {
+            deliveryTime ++;
+        }
+        if (deliveryDistance > 100) {
+            deliveryTime ++;
+            System.out.println("Время доставки составит болеe" + deliveryTime + " суток");
+        }
+                    System.out.println("Время доставки составит " + deliveryTime + " суток");
 
         //Задача5
         int monthNumber = 12;
